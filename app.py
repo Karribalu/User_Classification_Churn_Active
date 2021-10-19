@@ -9,7 +9,7 @@ from flask import Flask, request, jsonify,render_template
 import joblib
 import pandas as pd
 import numpy as np
-app = Flask(__name__,static_url_path='/static')
+app = Flask(__name__)
 
 model = joblib.load('RandomForest3.pkl')
 
